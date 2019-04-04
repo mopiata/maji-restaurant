@@ -42,15 +42,48 @@ html, body {
 .breakfast,.lunch,.dinner,.party{
   color: white;
 }
-
+/* .breakfast,.lunch,.dinner,.party,.happy{
+  text-align: center;
+  padding-top: 30px;
+} */
 .fast-food{
   background-image: url(../images/backgrounds/foodsBg.jpg);
 }
 .subscribe{
   background-image: url(../images/backgrounds/subscribe.jpg);
   color: white;
+  text-align: center;
+  width: 50%;
+}
+.emailInput{
+  opacity: 0.3;
+  border:none;
+  padding:0.375rem 0.75rem;
+}
+.btn-primary{
+  border-radius: 0px;
+  background-color: #F15A29;
 }
 .footer{
   background-color: #F15A29;
   color: white;
+  text-align: center;
+  padding-top:50px;
+  padding-bottom: 10px; 
 }
+footer img{
+  margin-right: 40px;
+}
+.copyright{
+  font-size: 12px;
+}
+
+/* .social{
+  display: flex;
+  background-color: #F15A29;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social img{
+  margin-right: 15px;
+} */
