@@ -2,10 +2,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-.head{
-  display:flex;
-  flex-direction: column;
-}
+
 .jumbotron{
   background-image: url(../images/backgrounds/landing.jpg);
   background-repeat: no-repeat;
@@ -17,7 +14,7 @@ html, body {
 .headline{
   color: white;
   font-size: 30px;
-  transform: translate(0px, 40px);
+  transform: translate(0px, 20%);
 }
 
 .party{
