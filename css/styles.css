@@ -42,10 +42,7 @@ html, body {
 .breakfast,.lunch,.dinner,.party{
   color: white;
 }
-/* .breakfast,.lunch,.dinner,.party,.happy{
-  text-align: center;
-  padding-top: 30px;
-} */
+
 .foods{
   background-image: url(../images/backgrounds/foodsBg.jpg);
   width:100%;
@@ -172,12 +169,14 @@ footer img{
 .happy-customers div h3{
   color: #F15A29;
 }
-/* .gridded{
+.gridded{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   width:80%;
-  grid-column-gap: 20px;
+  grid-column-gap: 30px;
   margin-left: auto;
   margin-right: auto;
-} */
+  color: #F15A29;
+  font-weight: bold;
+}
