@@ -1,6 +1,7 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+  color:#4f504a;  
 }
 
 .jumbotron{
@@ -16,7 +17,6 @@ html, body {
   font-size: 30px;
   transform: translate(0px, 20%);
 }
-
 .party{
   background-color: #F15A29;
   margin-left: 0px;
@@ -96,11 +96,12 @@ footer img{
 .card-header{
   background-color: #e3e3e3;
   padding-left: 9px;
-  padding-right:0px;
+  padding-right:10px;
   padding-top: 0px;
 }
 .nav-link{
   color:#4f504a;  
+  font-weight: bold;
 }
 .nav-item{
   width:25%;
@@ -168,3 +169,15 @@ footer img{
 .happy-customers div:first-child{
   text-align: center;
 }
+.happy-customers div h3{
+  color: #F15A29;
+}
+/* .gridded{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width:80%;
+  grid-column-gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+} */
