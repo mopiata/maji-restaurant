@@ -46,3 +46,14 @@ html, body {
   color: white;
 }
 
+.fast-food{
+  background-image: url(../images/backgrounds/foodsBg.jpg);
+}
+.subscribe{
+  background-image: url(../images/backgrounds/subscribe.jpg);
+  color: white;
+}
+.footer{
+  background-color: #F15A29;
+  color: white;
+}
