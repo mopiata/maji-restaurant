@@ -2,6 +2,10 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   color:#4f504a;  
+  font-family: 'Quicksand', sans-serif;
+}
+h1,h2,h3{
+  font-family: 'Noto Serif TC', serif;
 }
 
 .jumbotron{
@@ -23,6 +27,7 @@ html, body {
   color: white;
   font-size: 30px;
   transform: translate(0px, 20%);
+  font-family: 'Nanum Myeongjo', serif;
 }
 .meals-nav{
   display: grid;
@@ -72,6 +77,10 @@ html, body {
 }
 .breakfast,.lunch,.dinner,.party{
   color: white;
+}
+.breakfast,.lunch,.dinner,.party,.happy{
+  font-family: 'Noto Serif TC', serif;
+  font-size: 25px;
 }
 .breakfast:hover,.lunch:hover,.dinner:hover{
   color:black;
@@ -256,6 +265,10 @@ footer img{
 }
 #review,#about{
   padding:5%;
+}
+#about h3{
+  font-family: 'Quicksand', sans-serif;;
+  font-weight: bolder;
 }
 #subscribe-feedback{
   display: none;
