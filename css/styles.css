@@ -293,6 +293,9 @@ footer img{
 #review,#about{
   padding:5%;
 }
+#about{
+  border-left:solid 1px #4f504a;
+}
 #about h3{
   font-family: 'Quicksand', sans-serif;;
   font-weight: bolder;
@@ -330,7 +333,7 @@ footer img{
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: white;
+  color: black;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }

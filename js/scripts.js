@@ -14,9 +14,7 @@ $(document).ready(function () {
   $('#partyModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   });
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  });
+  
 });
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
