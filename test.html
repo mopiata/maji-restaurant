@@ -3,117 +3,104 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .headline{
-    color: white;
-    font-size: 30px;
-    transform: translate(0px, 15%);
-    font-family: 'Nanum Myeongjo', serif;
-    }
-
-    .jumbotron{
-    background-image: url(images/backgrounds/landing.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0px;
-    text-align: center;
-    margin-bottom: 0px;
-    }
-
-    .jumbotron span{
-      text-align: left;
-    }
-
-    .overlay {
-      height: 100%;
-      width: 0;
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
       position: fixed;
+      /* Stay in place */
       z-index: 1;
-      top: 0;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
       left: 0;
-      background-color: rgb(0, 0, 0);
-      background-color: rgba(0, 0, 0, 0.9);
-      overflow-x: hidden;
-      transition: 0.5s;
-    }
-
-    .overlay-content {
-      position: relative;
-      top: 25%;
+      top: 0;
       width: 100%;
-      text-align: center;
-      margin-top: 30px;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
     }
 
-    .overlay a {
-      padding: 8px;
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
       text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
+      cursor: pointer;
     }
-
-    .overlay a:hover,
-    .overlay a:focus {
-      color: #f1f1f1;
-    }
-
-    .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .overlay a {
-        font-size: 20px
-      }
-
-      .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-    }
-    
   </style>
 </head>
 
 <body>
 
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+  <h2>Modal Example</h2>
 
-  <div class="jumbotron vh-100">
-  
-    <div class="container headline">
-      <img src="images/logoBig.png">
-      <p>We Provide The Best Food<br>At The <strong>Right Price</strong></p>
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
     </div>
-    <p style="font-size:30px;cursor:pointer; color:yellow;" onclick="openNav()">&#9776; open</p>
+
   </div>
 
   <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
     }
 
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
     }
   </script>
 

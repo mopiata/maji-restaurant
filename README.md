@@ -7,7 +7,7 @@ This is the landing page for website. It is for a fictional restaurant called Ma
 
 ![Alt Text](images/subscribe.PNG)
 
-#### program returns error value entered is not an email address
+#### program returns error when value entered is not an email address
       Example input: aaa
       Example output: "Please include an @ in the email address"
 #### program tells user they have been registered to the mailing list if value is correct
@@ -33,4 +33,4 @@ Samuel Ngigi (My instructor)
 #### License
 This project is licensed under the MIT License.
 
-##### 28th March 2019.
+##### 5th April 2019.
