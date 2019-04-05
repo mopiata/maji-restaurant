@@ -257,3 +257,6 @@ footer img{
 #review,#about{
   padding:5%;
 }
+#subscribe-feedback{
+  display: none;
+}
