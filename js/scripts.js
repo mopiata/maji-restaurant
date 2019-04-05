@@ -3,9 +3,18 @@ $(document).ready(function () {
 
     var userEmail = $("input#subscriberEmail").val();
     $("#subscribe-feedback").text(userEmail +" has been successfully added to our email list. Thank you.");
-    
-    $("#subscribe-feedback").show();
 
+    $("#subscribe-feedback").show();
     event.preventDefault();
   });
+  $('#happyModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  });
+  $('#partyModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  });
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  });
+
 });
