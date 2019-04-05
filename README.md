@@ -10,7 +10,7 @@ This is the landing page for website. It is for a fictional restaurant called Ma
 #### program returns error value entered is not an email address
       Example input: aaa
       Example output: "Please include an @ in the email address"
-#### program tells user they have been registered to the mailing list 
+#### program tells user they have been registered to the mailing list if value is correct
       Example input: 'info@javascript.com'
       Example output: "info@javascript.com has been successfully added to our email list. Thank you."
 
