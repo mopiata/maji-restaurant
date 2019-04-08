@@ -142,6 +142,7 @@ h1,h2,h3,h4{
   width:auto;
   background-color: darkgrey;
   color:white;
+  
 }
 ::placeholder { 
   color: white;
@@ -157,6 +158,7 @@ h1,h2,h3,h4{
 .validate{
   display:flex;
   text-align: center;
+  padding-left:30%;
 }
 
 .footer{
